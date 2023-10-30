@@ -62,9 +62,10 @@ export function Home() {
   })
 
   //-----DESAFIO NÚMERO 6
-  const pessoasH3 = pessoas.map((Emh) => {
-    return <h3> {JSON.stringify(Emh)} </h3>
+  const pessoasH3 = pessoas.map((emh) => {
+    return <h3 key={emh.id}> {emh.id} - {emh.nome} - {emh.idade} </h3>
   })
+ 
   
   //-----DESAFIO NÚMERO 7
   const jotas = {

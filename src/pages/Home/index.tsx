@@ -92,7 +92,7 @@ export function Home() {
   return (
     <body>
       <header>
-        <h1 className='cabecalho'>Teste de Wagner Vital</h1>
+        <h1 className='cabecalho'>Teste de Wagner Vital.</h1>
         <p>Wagner Vital, estudante de programação em busca de uma oportunidade para iniciar nessa carreira, pretendo crescer junto com a empresa, aprimorando os meus conhecimentos e aumentando minhas habilidades, agradeço desde já pela oportunidade e espero que este seja o início de uma incrível parceria.</p>
       </header>
 

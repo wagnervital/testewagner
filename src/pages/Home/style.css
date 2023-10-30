@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Epilogue', sans-serif;
+  background-color: rgb(235, 232, 232);
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.cabecalho {
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+header p {
+  margin: auto;
+  font-size: 20px;
+  width: 70%;
+}
+
+.desafio {
+  width: 70%;
+  margin: auto;
+  border: 1px black solid;
+  margin-bottom: 40px;
+  
+}
+
+.enunciado {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold ;
+}
+
+span {
+  font-weight: normal;
+}
+
+.desafio h1 {
+  border: 1px solid;
+  text-align: center;
+  background-color: rgb(177, 175, 175);
+}
+
+code {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.desafio .resolucao {
+  font-size: 22px;
+  margin-bottom: 15px;
+}

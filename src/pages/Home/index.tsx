@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './style.css';
 
 export function Home() {
@@ -231,7 +230,7 @@ export function Home() {
           <hr />
           <div>
             <p className="resolucao">Resolução:</p>
-            <code>const jotas = {JSON.stringify(soJotas)}</code>
+            <code>const jotas = {JSON.stringify(soJotas, null, 2)}</code>
           </div>
         </div>
       </main>

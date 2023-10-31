@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './style.css';
 
 export function Home() {
@@ -68,7 +69,7 @@ export function Home() {
  
   
   //-----DESAFIO NÚMERO 7
-  const jotas = {
+  const jotas: { [key: string]: string } = {
     jason: "Jason",
     thais: "Thaís",
     liz: "Liz",
@@ -79,14 +80,14 @@ export function Home() {
     gato: "Gato",
     jaguar: "Jaguar"
   };
-  
-  const soJotas = []
 
-  for (let jota in jotas) {
-    if (jota[0] == "j") {
-      soJotas.push(jota)
-    }}
+  const soJotas: { [key: string]: string } = {};
 
+  for (const j in jotas) {
+    if (j.startsWith('j') || j.startsWith("J")) {
+      soJotas[j] = jotas[j]
+    }
+  }
 
   ///-----FIM!!------------
 
@@ -230,7 +231,7 @@ export function Home() {
           <hr />
           <div>
             <p className="resolucao">Resolução:</p>
-            <code>const soJota = {JSON.stringify(soJotas)}</code>
+            <code>const jotas = {JSON.stringify(soJotas)}</code>
           </div>
         </div>
       </main>
